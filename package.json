@@ -1,5 +1,5 @@
 {
-  "name": "users-inesmesquita-documents-fbaul-ltd-2semestre-projeto",
+  "name": "users-inesmesquita-documents-dxd-ltd-2semestre-projeto",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,6 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.5.4"
+    "astro": "^4.5.8"
   }
 }

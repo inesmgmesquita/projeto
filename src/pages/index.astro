@@ -1,12 +1,19 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+const pageTitle = "Main Page"
+---
+
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro inês</title>
+		<title>{pageTitle}</title>
 	</head>
 	<body>
-		<h1>Astro inês mesquita 2</h1>
+		<Navigation />
+		<h1>{pageTitle}</h1>
 	</body>
 </html>

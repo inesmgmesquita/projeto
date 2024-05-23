@@ -1,3 +1,29 @@
+
+root {
+  /*COLORS*/
+  --primary-01: #ffffff;
+  --primary-02: #000000;
+  --secundary-01: #a6a6a6;
+  --accent-01: #1c4eef; 
+
+  /*SIZING & SPACING*/
+  --xxxs: 0.125rem; 
+  --xxs: 0.25rem;
+  --xs: 0.5rem;
+  --s: 0.75rem;
+  --m: 1rem;
+  --l: 1.25rem;
+  --xl: 1.5rem;
+  --xxl: 1.75rem;
+  --xxxl: 2rem;
+  --xxxxl: 2.5rem;
+  --xxxxl: 3rem;
+
+  /*FONTS*/
+  --font-p: 'Inter', 'sans-serif';
+}
+
+
 html {
     background-color: #f1f5f9;
     font-family: sans-serif;

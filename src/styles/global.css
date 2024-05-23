@@ -1,3 +1,106 @@
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPEditorialNew-Ultralight.woff2') format('woff2'),
+     url('/fonts/PPEditorialNew-Ultralight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPEditorialNew-UltralightItalic.woff2') format('woff2'),
+      url('/fonts/PPEditorialNew-UltralightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPEditorialNew-Regular.woff2') format('woff2'),
+     url('/fonts/PPEditorialNew-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPEditorialNew-Italic.woff2') format('woff2'),
+     url('/fonts/PPEditorialNew-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-SemiBolditalic.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-SemiBolditalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Medium.woff') format('woff');
+  font-weight: 530;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Regular.woff') format('woff');
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Italic.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Italic.woff') format('woff');
+  font-weight: 450;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Book.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Thin.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Thin.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 root {
   /*COLORS*/
@@ -45,6 +148,9 @@ html {
     margin: 1rem 0;
     font-size: 2.5rem;
     color: purple;
+    font-family: PPNeueMontreal, serif;
+    font-style: italic;
+    font-weight: 400;
   }
 
   /* nav styles */

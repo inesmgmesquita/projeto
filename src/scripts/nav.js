@@ -41,4 +41,8 @@ document.addEventListener("DOMContentLoaded", function() {
             timeline.reverse();
         }
     });
+<<<<<<< HEAD
 });
+=======
+});
+>>>>>>> ca1c4853b1c0c303eded321e712d6cb2061f0dda

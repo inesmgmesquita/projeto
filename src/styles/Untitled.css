@@ -1,0 +1,464 @@
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPEditorialNew-Ultralight.woff2') format('woff2'),
+     url('/fonts/PPEditorialNew-Ultralight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPEditorialNew-UltralightItalic.woff2') format('woff2'),
+      url('/fonts/PPEditorialNew-UltralightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPEditorialNew-Regular.woff2') format('woff2'),
+     url('/fonts/PPEditorialNew-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPEditorialNew-Italic.woff2') format('woff2'),
+     url('/fonts/PPEditorialNew-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-SemiBolditalic.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-SemiBolditalic.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Medium.woff') format('woff');
+  font-weight: 530;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Regular.woff') format('woff');
+  font-weight: 450;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Italic.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Italic.woff') format('woff');
+  font-weight: 450;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Book.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PPNeueMontreal';
+  src: url('/fonts/PPNeueMontreal-Thin.woff2') format('woff2'),
+     url('/fonts/PPNeueMontreal-Thin.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+root {
+  /*COLORS*/
+  --primary-01: #ffffff;
+  --primary-02: #000000;
+  --secundary-01: #a6a6a6;
+  --accent-01: #1c4eef; 
+
+  /*SIZING & SPACING*/
+  --xxxs: 0.125rem; 
+  --xxs: 0.25rem;
+  --xs: 0.5rem;
+  --s: 0.75rem;
+  --m: 1rem;
+  --l: 1.25rem;
+  --xl: 1.5rem;
+  --xxl: 1.75rem;
+  --xxxl: 2rem;
+  --xxxxl: 2.5rem;
+  --xxxxl: 3rem;
+
+  /*FONTS*/
+  --font-p: 'Inter', 'sans-serif';
+}
+
+
+html {
+    background-color: #f1f5f9;
+    font-family: sans-serif;
+
+  }* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100vw;
+    height: 90vh;
+    font-family: "Helvetica Neue";   
+}
+
+/* LOADER */
+
+.pre-loader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    z-index: 8;
+}
+
+.loader {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9;
+}
+
+.loader-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 400px;
+    color: #fff;
+    z-index: 10;
+}
+
+.count {
+    flex: 2;
+    text-align: right;
+    line-height: 1;
+    padding: 0 1em;
+}
+
+.copy {
+    flex: 6;
+    font-family: "New Times Roman";
+    font-size: 30px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.ml16 {
+    overflow: hidden;
+}
+
+.ml16 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.loader-bg {
+    position: absolute;
+    display: block;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: red;
+    z-index: -1;
+}
+
+.loader-2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./assets/img/aveiro_1.png') no-repeat 50% 50%;
+    background-size: cover;
+    z-index: 7;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+
+/* NAV */
+
+nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 2em;
+    color: #cdc6be;
+    mix-blend-mode: difference;
+    z-index: 6;
+}
+
+nav > div {
+    flex: 1;
+}
+
+.logo {
+    text-align: center;
+    font-family: "Times New Roman";
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    color: #cdc6be;
+}
+
+.toggle-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.burger {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+    background: #fff;
+    outline: none;
+    border: none;
+    
+    height: 20px;
+    transition: all 25mms ease-out;
+    cursor: pointer;
+}
+
+.burger:before,
+.burger:after {
+    content: "";
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background: #cdc6be;
+    transition: all 250ms ease-out;
+    will-change: transform;
+}
+
+.burger:before {
+    transform: translateY(-3px);
+}
+
+.burger:after {
+    transform: translateY(3px);
+}
+
+.active.burger:before {
+    transform: translateY(0) rotate(45deg);
+}
+
+.active.burger:after {
+    transform: translateY(0) rotate(-45deg);
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none; /* Esconder inicialmente */
+    background: #141412;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Esconder no topo */
+    will-change: transform;
+    z-index: 5;
+}
+
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.menu-item {
+    display: flex;
+    cursor: pointer;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+} 
+
+.menu-item p {
+    position: relative;
+    text-align: center;
+    font-family: "Times New Roman";
+    font-size: 15vw;
+    line-height: 80%;
+    will-change: transform;
+    transition: letter-spacing 0.3s;
+}
+
+.menu-item p:hover {
+   letter-spacing: 0.075em;
+}
+
+.menu-item p#active::after {
+    content: "";
+    position: absolute;
+    top: 65%; 
+    left: 0;
+    transform: translateY(-50%);
+    background: #c03f13;
+    width: 0%;
+    height: 12px;
+}
+
+.sub-nav {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5em;
+    opacity: 0;
+}
+
+.sub-nav p {
+    font-family: "Times New Roman";
+    font-size: 20px;
+    color: #cdc6be;
+}
+
+@media(max-width:900px) {
+    .logo a {
+        font-size: 20px;
+    }
+}
+
+
+/* MAIN */
+
+.main {
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2em;
+    z-index: 4;
+}
+
+.main h1 {
+    position: relative;
+    font-size: 15em;
+    font-family: "Times New Roman";
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+}
+
+.description {
+    width: 40%;
+    padding-top: 2em;
+}
+ 
+/* FOOTER */
+
+footer {
+  font-size: var(--xs);
+  border-top-style: solid; 
+  height: var(--xxxxl);
+}
+
+.copyright {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 var(--xs) 0 var(--xs);
+  cursor: default;
+}
+
+.footer-menu {
+  display: flex;
+  float: left;
+}
+
+.footer-menu {
+  padding-inline-start: 0;
+}
+
+.footer-menu a {
+  text-decoration: none;
+  padding-right: var(--xxs);
+  font-size: var(--l);
+  text-decoration: none;
+  color: var(--color-2);
+}
+
+.footer-menu a:hover{
+  color: var(--color-3);
+  cursor: pointer;
+}
+
+.copyright p {
+  text-align: right;
+  font-size: var(--xs)
+}
+
+/* MEDIA QUERIE */
+
+
+
+
+
+
+
+
+
+
+

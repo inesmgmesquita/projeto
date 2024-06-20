@@ -1,10 +1,18 @@
 ---
-import Navigation from './Navigation.astro';
-import Hamburguer from './Hamburguer.astro';
----
+import Nav from './Nav.astro';
+--- 
 <header>
-  <nav>
-    <Hamburguer />
-    <Navigation />
-  </nav>
+    <div class="container">
+        <div class="pre-loader">
+            <div class="loader"></div>
+            <div class="loader-bg"></div>
+        </div>
+        <div class="loader-content">
+            <div class="count"><p>0</p></div>
+            <div class="copy"><p class="ml16">Inês Mesquita</p></div>
+        </div>
+        <div class="loader-2"></div>
+    </div>
+    <Nav />
 </header>
+<script src="/scripts/header.js" defer></script>

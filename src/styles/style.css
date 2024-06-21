@@ -1,34 +1,34 @@
 @font-face {
-  font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPEditorialNew-Ultralight') format('woff2'),
-     url('/fonts/PPEditorialNew-Ultralight') format('woff');
+  font-family: 'PPEditorialNew';
+  src: url('/assets/fonts/PPEditorialNew-Ultralight.woff2') format('woff2'),
+     url('/assets/fonts/PPEditorialNew-Ultralight.woff') format('woff');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPEditorialNew-UltralightItalic.woff2') format('woff2'),
-      url('/fonts/PPEditorialNew-UltralightItalic.woff') format('woff');
+  font-family: 'PPEditorialNew';
+  src: url('/assets/fonts/PPEditorialNew-Ultralight.woff2') format('woff2'),
+      url('/assets/fonts/PPEditorialNew-UltralightItalic.woff') format('woff');
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPEditorialNew-Regular.woff2') format('woff2'),
-     url('/fonts/PPEditorialNew-Regular.woff') format('woff');
+  font-family: 'PPEditorialNew';
+  src: url('/assets/fonts/PPEditorialNew-Regular.woff2') format('woff2'),
+     url('/assets/fonts/PPEditorialNew-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPEditorialNew-Italic.woff2') format('woff2'),
-     url('/fonts/PPEditorialNew-Italic.woff') format('woff');
+  font-family: 'PPEditorialNew';
+  src: url('/assets/fonts/PPEditorialNew-Italic.woff2') format('woff2'),
+     url('/assets/fonts/PPEditorialNew-Italic.woff') format('woff');
   font-weight: 400;
   font-style: italic;
   font-display: swap;
@@ -38,8 +38,8 @@
 
 @font-face {
   font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
-     url('/fonts/PPNeueMontreal-Bold.woff') format('woff');
+  src: url('/assets/fonts/PPNeueMontreal-Bold.woff2') format('woff2'),
+     url('/assets/fonts/PPNeueMontreal-Bold.woff') format('woff');
   font-weight: 800;
   font-style: normal;
   font-display: swap;
@@ -47,8 +47,8 @@
 
 @font-face {
   font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPNeueMontreal-SemiBolditalic.woff2') format('woff2'),
-     url('/fonts/PPNeueMontreal-SemiBolditalic.woff') format('woff');
+  src: url('/assets/fonts/PPNeueMontreal-SemiBolditalic.woff2') format('woff2'),
+     url('/assets/fonts/PPNeueMontreal-SemiBolditalic.woff') format('woff');
   font-weight: 700;
   font-style: italic;
   font-display: swap;
@@ -56,8 +56,8 @@
 
 @font-face {
   font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
-     url('/fonts/PPNeueMontreal-Medium.woff') format('woff');
+  src: url('/assets/fonts/PPNeueMontreal-Medium.woff2') format('woff2'),
+     url('/assets/fonts/PPNeueMontreal-Medium.woff') format('woff');
   font-weight: 530;
   font-style: normal;
   font-display: swap;
@@ -65,8 +65,8 @@
 
 @font-face {
   font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
-     url('/fonts/PPNeueMontreal-Regular.woff') format('woff');
+  src: url('/assets/fonts/PPNeueMontreal-Regular.woff2') format('woff2'),
+     url('/assets/fonts/PPNeueMontreal-Regular.woff') format('woff');
   font-weight: 450;
   font-style: normal;
   font-display: swap;
@@ -74,8 +74,8 @@
 
 @font-face {
   font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPNeueMontreal-Italic.woff2') format('woff2'),
-     url('/fonts/PPNeueMontreal-Italic.woff') format('woff');
+  src: url('/assets/fonts/PPNeueMontreal-Italic.woff2') format('woff2'),
+     url('/assets/fonts/PPNeueMontreal-Italic.woff') format('woff');
   font-weight: 450;
   font-style: italic;
   font-display: swap;
@@ -84,8 +84,8 @@
 
 @font-face {
   font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPNeueMontreal-Book.woff2') format('woff2'),
-     url('/fonts/PPNeueMontreal-Book.woff') format('woff');
+  src: url('/assets/fonts/PPNeueMontreal-Book.woff2') format('woff2'),
+     url('/assets/fonts/PPNeueMontreal-Book.woff') format('woff');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -93,8 +93,8 @@
 
 @font-face {
   font-family: 'PPNeueMontreal';
-  src: url('/fonts/PPNeueMontreal-Thin.woff2') format('woff2'),
-     url('/fonts/PPNeueMontreal-Thin.woff') format('woff');
+  src: url('/assets/fonts/PPNeueMontreal-Thin.woff2') format('woff2'),
+     url('/assets/fonts/PPNeueMontreal-Thin.woff') format('woff');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -103,26 +103,27 @@
 
 :root {
   /*COLORS*/
-  --primary-01: #cdc6be;
-  --primary-02: #141412;
+  --primary-01: #FAFAFA;
+  --primary-02: #191919;
   --secundary-01: #a6a6a6;
   --accent-01: #1c4eef; 
 
   /*SIZING & SPACING*/
-  --xxxs: 0.125rem; 
-  --xxs: 0.25rem;
-  --xs: 0.5rem;
-  --s: 0.75rem;
-  --m: 1rem;
-  --l: 1.25rem;
-  --xl: 1.5rem;
-  --xxl: 1.75rem;
-  --xxxl: 2rem;
-  --xxxxl: 2.5rem;
-  --xxxxl: 3rem;
+  --xxxs: 0.125rem; /* 2px */
+  --xxs: 0.25rem; /* 4px */
+  --xs: 0.5rem; /* 8px */
+  --s: 0.75rem; /* 12px */
+  --m: 1rem; /* 16px */
+  --l: 1.25rem; /* 20px */
+  --xl: 1.5rem; /* 24px */
+  --xxl: 1.75rem; /* 28px */
+  --xxxl: 2rem; /* 32px */
+  --xxxxl: 2.5rem; /* 40px */
+  --xxxxl: 3rem; /* 48px */
 
   /*FONTS*/
-  --font-p: 'Inter', 'sans-serif';
+  --ff-neuemontreal: 'PPNeueMontreal', 'sans-serif';
+  --ff-editorialnew: 'PPEditorialNew', 'serif';
 }
 
 * {
@@ -134,9 +135,17 @@
 html, body {
   width: 100%;
   height: 100%;
-  font-family: "Inter";   
+  font-family: var(--ff-neuemontreal); 
+  font-weight: 400; 
   background-color: var(--primary-01);
   scroll-behavior: smooth;
+}
+
+h1 {
+  font-family: var(--ff-editorialnew); 
+  font-weight: 200;
+  font-style: italic;
+  font-size: 10vw;
 }
 
 a {
@@ -246,12 +255,13 @@ nav > div {
 
 .logo {
   text-align: center;
-  font-family: "Times New Roman";
+  font-family: var(--ff-editorialnew);
 }
 
 .logo a {
   text-decoration: none;
   font-size: 30px;
+  font-style: italic;
   color: var(--primary-01);
 }
 
@@ -264,7 +274,7 @@ nav > div {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.75em 2em 1.5em 2em;
+  padding: 1.75rem 2rem 1.5rem 2rem;
   background: #000;
   outline: none;
   border: none;
@@ -400,14 +410,10 @@ nav > div {
 }
 
 .main h1 {
-  font-size: 10vw;
-  font-family: "Times New Roman";
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 1;
-  text-align: left;
-  justify-content: center;
-  align-items: center;
+    font-family: var(--ff-editorialnew); 
+    font-weight: 200;
+    font-style: italic;
+    font-size: 10vw;
 }
 
 .description {
@@ -477,9 +483,13 @@ nav > div {
 
 .card {
   padding: 10px;
-    text-decoration: none;
-    color: var(--primary-01);
-    transition: transform .3s ease;;
+  text-decoration: none;
+  color: var(--primary-01);
+  transition: transform .3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-content {
@@ -570,9 +580,9 @@ footer {
 
 /* MEDIA QUERIE */
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
   .description {
-      width: 40%;
+      width: 50%;
   }
   
   .copyright {

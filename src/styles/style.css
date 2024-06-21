@@ -346,9 +346,9 @@ nav > div {
 .menu-item p {
   position: relative;
   text-align: center;
-  font-family: "Times New Roman";
-  font-size: 15vw;
-  line-height: 80%;
+  font-family: var(--ff-editorialnew);
+  font-style: italic;
+  font-size: 10vw;
   will-change: transform;
   transition: letter-spacing 0.3s;
 }
@@ -380,8 +380,7 @@ nav > div {
 }
 
 .sub-nav p {
-  font-family: "Times New Roman";
-  font-size: 20px;
+  font-size: var(--l);
   color: var(--primary-01);
 }
 
@@ -401,7 +400,7 @@ nav > div {
   align-items: flex-end;
   z-index: 0;
   background: var(--primary-01);
-  padding: 2em;
+  padding: var(--xxxl);
 }
 
 .main {
@@ -413,12 +412,18 @@ nav > div {
     font-family: var(--ff-editorialnew); 
     font-weight: 200;
     font-style: italic;
-    font-size: 10vw;
+    font-size: 5rem;
 }
 
 .description {
   width: 100%;
-  padding-top: 2em;
+  padding-top: var(--xxxl);
+}
+
+.description p {
+  font-family: var(--ff-neuemontreal);
+  font-size: var(--xl);
+  font-weight: 450;
 }
 
 /* ABOUT MAIN */

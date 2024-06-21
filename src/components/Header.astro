@@ -17,24 +17,28 @@ import Nav from './Nav.astro';
 </header>
 
 <script>
-    function startLoader() {
-                let counterElement = document.querySelector(".count p");
-                let currentValue = 0;
+    document.addEventListener("DOMContentLoaded", function() {
+        const hasSeenLoader = localStorage.getItem('hasSeenLoader');
 
-                function updateCounter() {
-                    if (currentValue < 100) {
-                        let increment = Math.floor(Math.random() * 10) + 1;
-                        currentValue = Math.min(currentValue + increment, 100);
-                        counterElement.textContent = currentValue;
+        function startLoader() {
+            let counterElement = document.querySelector(".count p");
+            let currentValue = 0;
 
-                        let delay = Math.floor(Math.random() * 200) + 25;
-                        setTimeout(updateCounter, delay);
-                    }
+            function updateCounter() {
+                if (currentValue < 100) {
+                    let increment = Math.floor(Math.random() * 10) + 1;
+                    currentValue = Math.min(currentValue + increment, 100);
+                    counterElement.textContent = currentValue;
+
+                    let delay = Math.floor(Math.random() * 200) + 25;
+                    setTimeout(updateCounter, delay);
                 }
-
-                updateCounter();
             }
 
+            updateCounter();
+        }
+
+        if (!hasSeenLoader) {
             startLoader();
 
             gsap.to(".count", { opacity: 0, delay: 3.5, duration: 0.5 });
@@ -94,8 +98,8 @@ import Nav from './Nav.astro';
                 delay: 3.75,
                 stagger: 0.1
             });
-            
-             gsap.from(".main h2", {
+
+            gsap.from(".main h2", {
                 y: 200,
                 opacity: 0,
                 ease: "power4.inOut",
@@ -104,63 +108,23 @@ import Nav from './Nav.astro';
                 stagger: 0.1
             });
 
-        document.addEventListener("DOMContentLoaded", function() {
-        let activeItemIndicator = CSSRulePlugin.getRule(".menu-item p#active::after");
-        const toggleButton = document.querySelector(".burger");
-        const overlay = document.querySelector(".overlay");
-        let isOpen = false;
+            gsap.from(".navigation", {
+                y: 200,
+                opacity: 0,
+                ease: "power4.inOut",
+                duration: 1.5,
+                delay: 3.75,
+                stagger: 0.1
+            });
 
-        // Inicialmente, esconda os itens do menu
-        gsap.set(".menu-item p", { y: 225 });
-        gsap.set(overlay, { display: "none" });
-
-        // Animation Timeline
-        const timeline = gsap.timeline({ paused: true });
-
-        // Adicione animações à timeline
-        timeline.to(".overlay", {
-            duration: 1.5,
-            clipPath: "polygon(0 0, 100% 0, 100% 100%, 0% 100%)", // Mover de cima para baixo
-            ease: "power4.inOut",
-            onStart: function() {
-                overlay.style.display = "flex"; // Mostrar overlay quando a animação iniciar
-            },
-            onReverseComplete: function() {
-                overlay.style.display = "none"; // Esconder overlay quando a animação reverter
-            }
-        });
-
-        timeline.to(".menu-item p", {
-            duration: 1.5,
-            y: 0,
-            stagger: 0.2,
-            ease: "power4.out"
-        }, "-=1");
-
-        timeline.to(activeItemIndicator, {
-            width: "100%",
-            duration: 1,
-            stagger: 0.2,
-            ease: "power4.out",
-            delay: 0.5
-        }, "<");
-
-        timeline.to(".sub-nav", {
-            bottom: "10%",
-            opacity: 1,
-            duration: 0.5,
-            delay: 0.5,
-        }, "<");
-
-        // Adicione o evento de clique ao botão de toggle
-        toggleButton.addEventListener("click", function() {
-            if (isOpen) {
-                timeline.reverse();
-            } else {
-                timeline.play();
-            }
-            isOpen = !isOpen;
-        });
+            // Marcar a animação como vista
+            localStorage.setItem('hasSeenLoader', 'true');
+        } else {
+            // Esconder elementos de carregamento se a animação já foi vista
+            document.querySelector('.pre-loader').style.display = 'none';
+            document.querySelector('.loader-content').style.display = 'none';
+            document.querySelector('.loader-2').style.display = 'none';
+        }
     });
 
 </script>

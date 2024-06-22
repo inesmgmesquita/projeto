@@ -584,7 +584,7 @@ nav > div {
   justify-content: center;
   align-items: center;
   gap: var(--size-l);
-  padding: .4em .8em;
+  padding: var(--size-xxs) var(--size-s);
   display: inline-flex;
   color: var(--primary-02);
   border-radius: 25px;
@@ -627,6 +627,7 @@ nav > div {
 
 .go-back-button a:hover {
   text-decoration: underline;
+  color: var(--accent-01);
 }
 
 .post-content h3 {
@@ -642,21 +643,55 @@ nav > div {
 
 .notes {
   list-style-type: none;
-  margin: var(--size-s) 0 var(--size-m) 0;
+  margin: var(--size-xl) 0 var(--size-s) 0;
+}
+
+.info-cards {
+  display: flex;
+  flex-direction: column;
 }
 
 .post-tags {
   font-size: 1rem;
-  overflow: hidden;
   display: flex;
   gap: var(--size-m);
-  margin: var(--size-m) 0 var(--size-m) 0;
-  order: 1;
+  margin-top: var(--size-m);
 }
+
+.behance-button {
+  display: flex;
+  background-color: var(--primary-01);
+  border: none;
+  text-align: center;
+  margin-top: var(--size-l);
+  cursor: pointer;
+}
+
+.behance-button a {
+  font-family: var(--ff-neuemontreal);
+  font-size: var(--size-m);
+  font-weight: 400;
+  border-radius: 25px;
+  border: 1px solid var(--primary-02);
+  color: var(--primary-02);
+  padding: var(--size-xxs) var(--size-s);
+  margin: var(--size-s) 0 var(--size-) 0; 
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.behance-button a:hover {
+  border: 1px solid var(--accent-01);
+  color: var(--accent-01);
+}
+
 
 .project-grid {
   display: flex;
-  margin-top: var(--size-xxxl);
+  flex-direction: column;
+  align-items: center;
+  margin-top: var(--size-xxxxl);
 }
 
 .project_figures {
@@ -666,6 +701,10 @@ nav > div {
   gap: 0;
   margin: 0;
   padding: 0;
+}
+
+.project_figures img {
+  width: 100%;
 }
 
 
@@ -755,6 +794,21 @@ footer {
   
   .content_table {
     width: 25%;
+  }
+
+  .post-description {
+    width: 60%;
+  }
+
+  .info-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .behance-button {
+    margin-top: var(--size-m);
   }
 
   .footer-menu {

@@ -9,16 +9,21 @@ const { frontmatter } = Astro.props;
         <button class="go-back-button"><a href="/blog/">← Click Me</a></button>
         <h2>{frontmatter.title}</h2>
         <h3>{frontmatter.subtitle}</h3>
+        <div class="post-description">
+          <p>{frontmatter.description}</p>
+        </div>
         <ul class="notes">
           <li>{frontmatter.mainroles}</li>
           <li>{frontmatter.teammates}</li>
           <li>{frontmatter.timeframe}</li>
         </ul>
-        <p>{frontmatter.description}</p>
-        <div class="post-tags">
-          <span class="card-tags">{frontmatter.tag1}</span>
-          <span class="card-tags">{frontmatter.tag2}</span>
-          <span class="card-tags">{frontmatter.tag3}</span>
+        <div class="info-cards">
+          <div class="post-tags">
+            <span class="card-tags">{frontmatter.tag1}</span>
+            <span class="card-tags">{frontmatter.tag2}</span>
+            <span class="card-tags">{frontmatter.tag3}</span>
+          </div>
+          <button class="behance-button"><a href="/blog/">Open on Behance ↗</a></button>
         </div>
         <slot />
       </div>

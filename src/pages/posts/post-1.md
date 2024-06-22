@@ -2,30 +2,29 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Fine Arts Faculty Website
 subtitle: Rethinking the platform for applicants
-tag1: ui design
-tag2: ux research
-tag3: prototyping
 mainroles: Main Roles - Research, Wireframes, Prototype
 teammates: Team Mates - Margarida Barros, Daniela Moreno
 timeframe: Time Frame - 7 weeks
+tag1: ui design
+tag2: ux research
+tag3: prototyping
 description: This project is focused on the Faculdade de Belas Artes da Universidade de Lisboa’s (FBAUL) website. It aims to develop concrete and realistic proposals to improve the experience of candidates. Our goal is to enhance the usability of FBAUL's website for potential candidates by providing them with access to all the relevant information required to make an informed decision.
 ---
 <section class="project-grid"> 
     <figure class="project_figures">
-        <img src="/assets/img/project_1/slide-1.png" alt="Image explaining the project problem and solution">
-        <img src="/assets/img/project_1/page2.jpg" alt="Segmentation of our solution along with three mobile mockups">
-        <img src="/assets/img/project_1/page3.jpg" alt="Context of the solution and the design process displayed with a black background">
-        <img src="/assets/img/project_1/page4.jpg" alt="Comparative table of competitor analysis and their best practices displaying three example images">
-        <img src="/assets/img/project_1/page5.jpg" alt="Desk research about Instagram, their impact and main users, and what makes TikTok so successful">
-        <img src="/assets/img/project_1/page6.jpg" alt="Social listening based the research">
-        <img src="/assets/img/project_1/page7.jpg" alt="Interviews and surveys featuring quotes from interviews and graphics from survey analysis">
-        <img src="/assets/img/project_1/page8.jpg" alt="Displaying the need and requeriments of two personas, the Private user and the Creator and Business Owner">
-        <img src="/assets/img/project_1/page9.jpg" alt="Using MoSCoW to prioritize features, displayed with white text on a black background">
-        <img src="/assets/img/project_1/page10.png" alt="Three user flows displayed in a diagram">
-        <img src="/assets/img/project_1/page11.jpg" alt="Twelve mockups of the solution showing, each with explanatory elements of the respective features">
-        <img src="/assets/img/project_1/page12.jpg" alt="word 'Prototype' is displayed on the left with a white background and black text, accompanied by a tag with the word 'Design' on the right">
-        <img src="/assets/img/project_1/page13.jpg" alt="Usability test displaying the tasks and results, along with the main insights">
-        <img src="/assets/img/project_1/page14.png" alt="What have we learned and the next steps">
-        <img src="/assets/img/project_1/page15.jpg" alt="Final credits for the team">
+        <img src="/assets/img/project-01/slide-1.png" alt="Image explaining the project challenge">
+        <img src="/assets/img/project-01/slide-2.png" alt="Process used to carry out the work ">
+        <img src="/assets/img/project-01/slide-3.png" alt="User segmentation and analysis of current website">
+        <img src="/assets/img/project-01/slide-4.png" alt="Benchmarking and data analysis of other competing and non-competing universities">
+        <img src="/assets/img/project-01/slide-5.png" alt="Analysis of the survey and interviews conducted and categorisation of feedback into levels of content and importance">
+        <img src="/assets/img/project-01/slide-6.jpg" alt="Profile and user flow of the first and second persona, The Recent Applicant and The Returning Applicant">
+        <img src="/assets/img/project-01/slide-7.png" alt="Segmentation of key insights by greatest opportunity, unlikelihood and maintenance, and exercise of how might we">
+        <img src="/assets/img/project-01/slide-8.png" alt="Site flow with the main pages of the developed website">
+        <img src="/assets/img/project-01/slide-9.png" alt="Presentation of the ideation phase, with the graphic image, visual identity and components created">
+        <img src="/assets/img/project-01/slide-10.png" alt="Presentation of three examples of wireframes for the Courses, Applications and Schools pages">
+        <img src="/assets/img/project-01/slide-11.png" alt="Presentation of three examples of mockups for the Courses, Applications and School pages respectively, and highlights and key takeaways for each section">
+        <img src="/assets/img/project-01/slide-12.png" alt="Segmentation of the results of the usability tests and the lessons learned from this exercise">
+        <img src="/assets/img/project-01/slide-13.png" alt="Screenshot of the homepage, accompanied by highlights of what we would have done differently and next steps for the future.">
+        <img src="/assets/img/project-01/slide-14.png" alt="Acknowledgements and team names">
     </figure>
 </section>

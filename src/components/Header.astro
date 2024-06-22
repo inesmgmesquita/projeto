@@ -17,114 +17,129 @@ import Nav from './Nav.astro';
 </header>
 
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const hasSeenLoader = localStorage.getItem('hasSeenLoader');
+  function startLoader() {
+                        let counterElement = document.querySelector(".count p");
+                        let currentValue = 0;
 
-        function startLoader() {
-            let counterElement = document.querySelector(".count p");
-            let currentValue = 0;
+                        function updateCounter() {
+                            if (currentValue < 100) {
+                                let increment = Math.floor(Math.random() * 10) + 1;
+                                currentValue = Math.min(currentValue + increment, 100);
+                                counterElement.textContent = currentValue;
 
-            function updateCounter() {
-                if (currentValue < 100) {
-                    let increment = Math.floor(Math.random() * 10) + 1;
-                    currentValue = Math.min(currentValue + increment, 100);
-                    counterElement.textContent = currentValue;
+                                let delay = Math.floor(Math.random() * 200) + 25;
+                                setTimeout(updateCounter, delay);
+                            }
+                        }
 
-                    let delay = Math.floor(Math.random() * 200) + 25;
-                    setTimeout(updateCounter, delay);
-                }
-            }
+                        updateCounter();
+                    }
 
-            updateCounter();
-        }
+                    function showLoader() {
+        document.querySelector('.pre-loader').classList.add('active');
+        document.querySelector('.loader-content').classList.add('active');
+        document.querySelector('.loader-2').classList.add('active');
+    }
 
-        if (!hasSeenLoader) {
-            startLoader();
+    function hideLoader() {
+        document.querySelector('.pre-loader').classList.remove('active');
+        document.querySelector('.loader-content').classList.remove('active');
+        document.querySelector('.loader-2').classList.remove('active');
+    }
 
-            gsap.to(".count", { opacity: 0, delay: 3.5, duration: 0.5 });
+    function runAnimations() {
 
-            let textWrapper = document.querySelector(".ml16");
-            textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, '<span class="letter">$&</span>');
+                    startLoader();
 
-            anime.timeline({ loop: false })
-                .add({
-                    targets: '.ml16 .letter',
-                    translateY: [-100, 0],
-                    easing: "easeOutExpo",
-                    duration: 1500,
-                    delay: (el, i) => 30 * i
-                })
-                .add({
-                    targets: '.ml16 .letter',
-                    translateY: [0, 100],
-                    easing: "easeOutExpo",
-                    duration: 3000,
-                    delay: (el, i) => 2000 + 30 * i
-                });
+                    gsap.to(".count", { opacity: 0, delay: 3.5, duration: 0.5 });
 
-            gsap.to(".pre-loader", {
-                scale: 0.5,
-                ease: "power4.inOut",
-                duration: 2,
-                delay: 3
-            });
+                    let textWrapper = document.querySelector(".ml16");
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, '<span class="letter">$&</span>');
 
-            gsap.to(".loader", {
-                height: "0",
-                ease: "power4.inOut",
-                duration: 1.5,
-                delay: 3.75
-            });
+                    anime.timeline({ loop: false })
+                        .add({
+                            targets: '.ml16 .letter',
+                            translateY: [-100, 0],
+                            easing: "easeOutExpo",
+                            duration: 1500,
+                            delay: (el, i) => 30 * i
+                        })
+                        .add({
+                            targets: '.ml16 .letter',
+                            translateY: [0, 100],
+                            easing: "easeOutExpo",
+                            duration: 3000,
+                            delay: (el, i) => 2000 + 30 * i
+                        });
 
-            gsap.to(".loader-bg", {
-                height: "0",
-                ease: "power4.inOut",
-                duration: 1.5,
-                delay: 4
-            });
+                    gsap.to(".pre-loader", {
+                        scale: 0.5,
+                        ease: "power4.inOut",
+                        duration: 2,
+                        delay: 3
+                    });
 
-            gsap.to(".loader-2", {
-                clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-                ease: "power4.inOut",
-                duration: 1.5,
-                delay: 3.5
-            });
+                    gsap.to(".loader", {
+                        height: "0",
+                        ease: "power4.inOut",
+                        duration: 1.5,
+                        delay: 3.75
+                    });
 
-            gsap.from(".main h1", {
-                y: 200,
-                opacity: 0,
-                ease: "power4.inOut",
-                duration: 1.5,
-                delay: 3.75,
-                stagger: 0.1
-            });
+                    gsap.to(".loader-bg", {
+                        height: "0",
+                        ease: "power4.inOut",
+                        duration: 1.5,
+                        delay: 4
+                    });
 
-            gsap.from(".main h2", {
-                y: 200,
-                opacity: 0,
-                ease: "power4.inOut",
-                duration: 1.5,
-                delay: 3.75,
-                stagger: 0.1
-            });
+                    gsap.to(".loader-2", {
+                        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
+                        ease: "power4.inOut",
+                        duration: 1.5,
+                        delay: 3.5
+                    });
 
-            gsap.from(".navigation", {
-                y: 200,
-                opacity: 0,
-                ease: "power4.inOut",
-                duration: 1.5,
-                delay: 3.75,
-                stagger: 0.1
-            });
+                    gsap.from(".main h1", {
+                        y: 200,
+                        opacity: 0,
+                        ease: "power4.inOut",
+                        duration: 1.5,
+                        delay: 3.75,
+                        stagger: 0.1
+                    });
 
-            // Marcar a animação como vista
-            localStorage.setItem('hasSeenLoader', 'true');
-        } else {
-            // Esconder elementos de carregamento se a animação já foi vista
-            document.querySelector('.pre-loader').style.display = 'none';
-            document.querySelector('.loader-content').style.display = 'none';
-            document.querySelector('.loader-2').style.display = 'none';
-        }
-    });
+                     gsap.from(".main h2", {
+                        y: 200,
+                        opacity: 0,
+                        ease: "power4.inOut",
+                        duration: 1.5,
+                        delay: 3.75,
+                        stagger: 0.1
+                    });
+            
+                    gsap.from(".navigation", {
+                        y: 200,
+                        opacity: 0,
+                        ease: "power4.inOut",
+                        duration: 1.5,
+                        delay: 3.75,
+                        stagger: 0.1
+                    });
+
+                    setTimeout(hideLoader, 6000); // Ajuste o tempo conforme a duração da animação
+    }
+
+    // Verificar se a animação já foi exibida
+    if (!sessionStorage.getItem("loaderDisplayed")) {
+        // Adicionar classe active para mostrar os elementos de carregamento
+        showLoader();
+        runAnimations();
+        // Marcar que a animação foi exibida
+        sessionStorage.setItem("loaderDisplayed", "true");
+    } else {
+        // Se a animação já foi exibida, ocultar imediatamente
+        hideLoader();
+    }
 
 </script>

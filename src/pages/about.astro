@@ -1,13 +1,10 @@
 ---
 import '../styles/style.css';
-import Layout from '../layouts/Layout.astro';
-import Footer from '../components/Footer.astro';
-import Header from '../components/Header.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 const pageTitle = "About";
 ---
 
-<Layout pageTitle={pageTitle}>
-  <Header />
+<BaseLayout pageTitle={pageTitle}>
   <main>
     <div class="about-content">
         <div class="content">
@@ -53,5 +50,4 @@ const pageTitle = "About";
     </div>
     </div>
 </main>
-<Footer />
-</Layout>
+</BaseLayout>

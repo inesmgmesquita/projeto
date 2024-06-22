@@ -1,13 +1,9 @@
 ---
 import '../styles/style.css';
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import MainContent from '../components/MainContent.astro';
 const pageTitle = "Home";
 --- 
-<Layout>
-    <Header />
+<BaseLayout>
     <MainContent />
-    <Footer />
-</Layout>
+</BaseLayout>

@@ -1,14 +1,14 @@
 ---
-style: ../styles/style.css
 layout: ../../layouts/MarkdownPostLayout.astro
-footer: ../components/Footer.astro
-header: ../components/Header.astro
-title: 'My First Blog Post'
-author: 'Astro Learner'
-pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
+title: Fine Arts Faculty Website
+subtitle: Rethinking the platform for applicants
+tag1: ui design
+tag2: ux research
+tag3: prototyping
+mainroles: Main Roles - 
+teammated: Team Mates - Margarida Barros, Daniela Moreno
+timeframe: Time Frame - 7 weeks
 image:
-    url: 'https://docs.astro.build/assets/full-logo-light.png'
-    alt: 'The full Astro logo.'
-tags: ["astro", "blogging", "learning in public"]
+    src: "/public/assets/img/fine-arts-faculty-website-cover.png"
+    alt: "A pink gradient background with a 3D model of a computer presenting the redesign of the website of the Faculty of Fine Arts of the University of Lisbon."
 ---

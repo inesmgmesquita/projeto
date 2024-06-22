@@ -1,65 +1,14 @@
 ---
+style: ../styles/style.css
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'Fine Arts Faculty Website'
-author: 'Inês Mesquita'
-pubDate: 2024-07-01
-description: 'Rethinking the platform for applicants'
+footer: ../components/Footer.astro
+header: ../components/Header.astro
+title: 'My First Blog Post'
+author: 'Astro Learner'
+pubDate: 2022-07-01
+description: 'This is the first post of my new Astro blog.'
 image:
-    url: '/public/assets/img/fine-arts-faculty-website-cover.png'
-    alt: 'A pink gradient background with a 3D model of a computer presenting the redesign of the website of the Faculty of Fine Arts of the University of Lisbon.'
-tags: ["ui design", "ux research", "prototyping"]
+    url: 'https://docs.astro.build/assets/full-logo-light.png'
+    alt: 'The full Astro logo.'
+tags: ["astro", "blogging", "learning in public"]
 ---
-
-<button onclick="history.back()" class="back" data-astro-cid-7a7bzblm=""> <img src="/svg/arrow-left.svg" alt="Arrow pointing to the left" data-astro-cid-7a7bzblm=""> <span data-astro-cid-7a7bzblm="">Back</span></button>
-
-
-
-<Layout pageTitle={pageTitle}>
-  <Header />
-  <main>
-    <div class="about-content">
-        <div class="content">
-            <div class="content_cv">
-                <div class="content_cv_elements">
-                    <h2>About</h2>
-                    <p>My name is Inês Mesquita and am a multidisciplinary graphic designer who graduated in Communication Design from the Faculty of Fine Arts at the University of Lisbon.</p>
-                    <p>As an individual, I see myself as ambitious, dedicated and persistent, with a creative and curious outlook, and a strong desire to collaborate with new people on different projects to learn and grow. I am able to adapt to diverse projects and challenges using a multidisciplinary approach, with a critical perspective.</p>
-                    <p>I’m currently working as a trainee designer at McCann Erickson, an advertising company based in Lisbon. My experience has been enriching, providing me with ample opportunities to collaborate with other professionals.</p>
-                    <p>In addition, I am working with a colleague after receiving an invitation from professors at my alma mater to redesign the website of the Research Centre of the Faculty of Fine Arts. This project granted me a fresh outlook on academic work environments.</p>
-                </div>
-            </div>
-            <div class="content_table">
-                <div class="content_elements">
-                    <h3>Education</h3>
-                    <h4>2017 — 2020</h4>
-                    <h5>Artistic School António Arroio<br>Level 4 Diploma in Communication Design</h5>
-                    <p>I completed the Specialised Artistic Education course in Communication Design, with a final grade of 17, and obtained a Secondary Education and Professional Certificate in Graphic Design at Level 4 of the National Qualifications Framework.</p>
-                    <h4>2020 — 2023</h4>
-                    <h5>Faculty of Fine-Arts of Lisbon<br>BA in Communication Design</h5>  
-                    <p>The bachelor in Communication Desig has has enabled me to develop my competencies in various areas while working with a diverse range of design disciplines, namely, branding, editorial, graphics, interaction, and web design.</p>
-                    <h4>2023 — current</h4>
-                    <h5>Faculty of Fine-Arts of Lisbon<br>Post Graduation in Digital Experience Design (DXD)</h5>  
-                    <p>In September, I started a postgraduate course in Digital Experience Design, in order to deepen my knowledge in the development of innovative digital products and services in an interdisciplinary context.</p>                            
-                </div>
-            </div>
-            <div class="content_table">
-                <div class="content_elements">
-                    <h3>Work</h3>
-                    <h4>2023 — current</h4>
-                    <h5>McCann Erickson<br>Designer Intern</h5>
-                </div>
-                <div class="content_elements">
-                    <h3>Freelance Work</h3>
-                    <h4>2021 — current</h4>
-                    <h5>Abrisaúde<br>Web Designer and Web Development</h5>
-                    <h4>2023 — current</h4>
-                    <h5>agenda.design<br>Co-founder and curator</h5>   
-                    <h4>2023 — current</h4>
-                    <h5>Faculty of Fine-Arts of Lisbon<br>Redesign of the website of the Centre for Research and Studies in Fine Arts (CIEBA)</h5>
-                </div>
-        </div> 
-    </div>
-    </div>
-</main>
-<Footer />
-</Layout>

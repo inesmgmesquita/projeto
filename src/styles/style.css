@@ -171,17 +171,16 @@ h3 {
 
 h4 {
   font-family: var(--ff-neuemontreal);
+  font-size: var(--size-s);
   font-weight: 400;
-  border-style: solid;
   border-radius: 25px;
-  border-color: var(--primary-02);
+  border: 1px solid var(--primary-02);
   color: var(--primary-02);
   padding: var(--size-xxs) var(--size-xs);
   margin: var(--size-s) 0 var(--size-s) 0; 
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: var(--size-s);
 }
 
 h5 {
@@ -277,23 +276,11 @@ a {
   z-index: -1;
 }
 
-.loader-2 {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: url('./assets/img/aveiro_1.png') no-repeat 50% 50%;
-  background-size: cover;
-  z-index: 101;
-  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+.pre-loader, .loader-content {
+  display: none; 
 }
 
-.pre-loader, .loader-content, .loader-2 {
-  display: none; /* Esconder inicialmente */
-}
-
-/* Estilos para animação de carregamento */
-.pre-loader.active, .loader-content.active, .loader-2.active {
+.pre-loader.active, .loader-content.active {
   display: block;
 }
 
@@ -383,9 +370,9 @@ nav > div {
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: none; /* Esconder inicialmente */
+  display: none; 
   background: var(--primary-02);
-  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); /* Esconder no topo */
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); 
   will-change: transform;
   z-index: 1000;
 }
@@ -533,7 +520,7 @@ nav > div {
 .cards-grid-layout {
   position: relative;
     display: grid;
-    max-width: calc((min(100vw - 48px, 1392px) - 264px)* 1 + 264px);
+    grid-template-columns: auto auto auto auto;
     margin-left: auto;
     margin-right: auto;
     gap: var(--size-s);
@@ -605,15 +592,6 @@ nav > div {
 
 /* POST */
 
-.back[data-astro-cid-7a7bzblm] {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-  padding: 24px;
-}
 
 
 

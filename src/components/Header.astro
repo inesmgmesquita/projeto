@@ -11,7 +11,6 @@ import Nav from './Nav.astro';
             <div class="count"><p>0</p></div>
             <div class="copy"><p class="ml16">Inês Mesquita</p></div>
         </div>
-        <div class="loader-2"></div>
     </div>
     <Nav />
 </header>
@@ -38,13 +37,11 @@ import Nav from './Nav.astro';
                     function showLoader() {
         document.querySelector('.pre-loader').classList.add('active');
         document.querySelector('.loader-content').classList.add('active');
-        document.querySelector('.loader-2').classList.add('active');
     }
 
     function hideLoader() {
         document.querySelector('.pre-loader').classList.remove('active');
         document.querySelector('.loader-content').classList.remove('active');
-        document.querySelector('.loader-2').classList.remove('active');
     }
 
     function runAnimations() {
@@ -93,13 +90,6 @@ import Nav from './Nav.astro';
                         delay: 4
                     });
 
-                    gsap.to(".loader-2", {
-                        clipPath: "polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)",
-                        ease: "power4.inOut",
-                        duration: 1.5,
-                        delay: 3.5
-                    });
-
                     gsap.from(".main h1", {
                         y: 200,
                         opacity: 0,
@@ -127,18 +117,17 @@ import Nav from './Nav.astro';
                         stagger: 0.1
                     });
 
-                    setTimeout(hideLoader, 6000); // Ajuste o tempo conforme a duração da animação
+                    setTimeout(hideLoader, 6000); 
     }
 
-    // Verificar se a animação já foi exibida
     if (!sessionStorage.getItem("loaderDisplayed")) {
-        // Adicionar classe active para mostrar os elementos de carregamento
+       
         showLoader();
         runAnimations();
-        // Marcar que a animação foi exibida
+       
         sessionStorage.setItem("loaderDisplayed", "true");
     } else {
-        // Se a animação já foi exibida, ocultar imediatamente
+     
         hideLoader();
     }
 

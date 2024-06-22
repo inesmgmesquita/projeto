@@ -10,9 +10,9 @@ teammates: Team Mates - Margarida Barros, Daniela Moreno
 timeframe: Time Frame - 7 weeks
 description: This project is focused on the Faculdade de Belas Artes da Universidade de Lisboa’s (FBAUL) website. It aims to develop concrete and realistic proposals to improve the experience of candidates. Our goal is to enhance the usability of FBAUL's website for potential candidates by providing them with access to all the relevant information required to make an informed decision.
 ---
-<section class="project-images"> 
+<section class="project-grid"> 
     <figure class="project_figures">
-        <img src="/assets/img/project_1/page1.png" alt="Image explaining the project problem and solution">
+        <img src="/assets/img/project_1/slide-1.png" alt="Image explaining the project problem and solution">
         <img src="/assets/img/project_1/page2.jpg" alt="Segmentation of our solution along with three mobile mockups">
         <img src="/assets/img/project_1/page3.jpg" alt="Context of the solution and the design process displayed with a black background">
         <img src="/assets/img/project_1/page4.jpg" alt="Comparative table of competitor analysis and their best practices displaying three example images">

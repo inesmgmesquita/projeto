@@ -654,8 +654,18 @@ nav > div {
   order: 1;
 }
 
-.project-images {
+.project-grid {
+  display: flex;
   margin-top: var(--size-xxxl);
+}
+
+.project_figures {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin: 0;
+  padding: 0;
 }
 
 

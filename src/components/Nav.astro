@@ -8,7 +8,7 @@
         <p><a href="/">Portfolio</a></p>
     </div>
     <div class="toggle-btn">
-        <button class="burger" id="button-menu"
+        <button class="open-burger" id="button-menu"
         onclick="this.classList.toggle('active');"></button>
     </div>
 </nav>
@@ -35,7 +35,7 @@
 <script>
     document.addEventListener("DOMContentLoaded", function() {
         let activeItemIndicator = CSSRulePlugin.getRule(".menu-item p#active::after");
-        const toggleButton = document.querySelector(".burger");
+        const toggleButton = document.querySelector(".open-burger");
         const overlay = document.querySelector(".overlay");
         let isOpen = false;
 

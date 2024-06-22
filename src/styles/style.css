@@ -325,7 +325,7 @@ nav > div {
   justify-content: flex-end;
 }
 
-.burger {
+.open-burger {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -339,8 +339,8 @@ nav > div {
   cursor: pointer;
 }
 
-.burger:before,
-.burger:after {
+.open-burger:before,
+.open-burger:after {
   content: "";
   width: var(--size-xxxxl);
   height: var(--size-xxxs);
@@ -350,19 +350,19 @@ nav > div {
   will-change: transform;
 }
 
-.burger:before {
+.open-burger:before {
   transform: translateY(-3px);
 }
 
-.burger:after {
+.open-burger:after {
   transform: translateY(3px);
 }
 
-.active.burger:before {
+.active.open-burger:before {
   transform: translateY(0) rotate(45deg);
 }
 
-.active.burger:after {
+.active.open-burger:after {
   transform: translateY(0) rotate(-45deg);
 }
 

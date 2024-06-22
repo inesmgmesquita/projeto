@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'PPEditorialNew';
-  src: url('/assets/fonts/PPEditorialNew-Ultralight.woff2') format('woff2'),
-     url('/assets/fonts/PPEditorialNew-Ultralight.woff') format('woff');
+  src: url('/assets/fonts/PPEditorialNew-UltralightItalic.woff2') format('woff2'),
+     url('/assets/fonts/PPEditorialNew-UltralightItalic.woff') format('woff');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -144,6 +144,14 @@ html, body {
   scroll-behavior: smooth;
 }
 
+h1 {
+  font-family: var(--ff-editorialnew); 
+  font-style: italic;
+  font-weight: 400;
+  line-height: 100%;
+  font-size: 14vw;
+}
+
 h2 {
   font-family: var(--ff-editorialnew);
   font-style: italic;
@@ -188,6 +196,7 @@ h5 {
 p {
   font-family: var(--ff-neuemontreal);
   font-size: var(--size-m);
+
 }
 
 a {
@@ -303,7 +312,7 @@ nav > div {
 .logo a {
   font-family: var(--ff-editorialnew);
   text-decoration: none;
-  font-size: 30px;
+  font-size: var(--size-xxl);
   font-style: italic;
   color: var(--primary-01);
   font-weight: 400;
@@ -393,13 +402,13 @@ nav > div {
   font-family: var(--ff-editorialnew);
   font-style: italic;
   font-size: 9vw;
-  line-height: 100%;
+  line-height: 110%;
   will-change: transform;
   transition: letter-spacing 0.3s;
 }
 
 .menu-item p:hover {
- letter-spacing: var(--size-s);
+ letter-spacing: var(--size-xs);
  color: var(--accent-01);
 }
 
@@ -453,14 +462,6 @@ nav > div {
   justify-content: flex-end;
 }
 
-.main h1 {
-    font-family: var(--ff-editorialnew); 
-    font-style: italic;
-    font-weight: 200;
-    line-height: 100%;
-    font-size: 12vw;
-}
-
 .description {
   width: 100%;
   padding-top: var(--size-xxxl);
@@ -506,7 +507,7 @@ nav > div {
   height: 94vh;
   display: flex;
   flex-direction: column;
-  padding: 6em 0 0 0;
+  padding: 6rem 0 0 0;
   overflow: scroll; 
 }
 
@@ -514,7 +515,7 @@ nav > div {
   overflow: auto;
   display: flex;
   flex-direction: column;
-  padding: 2em;
+  padding: var(--size-xxxl);
 }
 .cards-grid-layout {
   position: relative;
@@ -522,7 +523,7 @@ nav > div {
     max-width: calc((min(100vw - 48px, 1392px) - 264px)* 1 + 264px);
     margin-left: auto;
     margin-right: auto;
-    gap: 12px;
+    gap: var(--size-s);
     grid-template-columns: 1fr;
     justify-content: center;
 }
@@ -543,6 +544,18 @@ nav > div {
     flex-direction: column;
 }
 
+.card-content h3 {
+  font-family: var(--ff-neuemontreal);
+  font-size: var(--size-xl);
+  font-style: normal;
+  font-weight: 450;
+  margin: var(--size-m) 0 var(--size-s) 0;
+  color: var(--primary-02);
+  text-decoration: none;
+  text-transform: none;
+
+}
+
 .figure-thumbnail {
   display: contents;
   overflow: hidden;
@@ -561,21 +574,20 @@ nav > div {
   font-size: 1rem;
   overflow: hidden;
   display: flex;
-  gap: 16px;
+  gap: var(--size-m);
   order: 1;
-  padding: 16px 0;
 }
 
 .card-tags {
   justify-content: center;
   align-items: center;
-  gap: 20px;
+  gap: var(--size-l);
   padding: .4em .8em;
   display: inline-flex;
-  background-color: var(--primary-02);
-  color: var(--primary-01);
+  color: var(--primary-02);
   border-radius: 25px;
   overflow: hidden;
+  border: 1px solid var(--primary-02);
 }
 
 
@@ -583,7 +595,7 @@ nav > div {
 /* FOOTER */
 
 footer {
-  font-size: 16px;
+  font-size: var(--size-m);
   width: 100%;
   background-color: var(--primary-01);
   border-top: 2px solid var(--primary-02);
@@ -628,7 +640,7 @@ footer {
 
 @media screen and (min-width: 992px) {
   .description {
-      width: 50%;
+      width: 60%;
   }
   
   .copyright {

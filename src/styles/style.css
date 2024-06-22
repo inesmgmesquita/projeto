@@ -156,6 +156,7 @@ h2 {
   font-family: var(--ff-editorialnew);
   font-style: italic;
   font-weight: 200;
+  line-height: 100%;
   font-size: var(--size-xxxxxl);
   margin: var(--size-m) 0 var(--size-m) 0;
 }
@@ -166,7 +167,7 @@ h3 {
   font-size: var(--size-xl);
   font-weight: 400;
   text-transform: uppercase;
-  margin: var(--size-m) 0 var(--size-m) 0;
+  margin: var(--size-m) 0 0 0;
 }
 
 h4 {
@@ -185,6 +186,7 @@ h4 {
 
 h5 {
   font-family: var(--ff-neuemontreal);
+  font-size: var(--size-m);
   font-weight: 530;
   padding: 0;
   margin: 0;
@@ -517,6 +519,7 @@ nav > div {
   flex-direction: column;
   padding: var(--size-xxxl);
 }
+
 .cards-grid-layout {
   position: relative;
     display: grid;
@@ -553,7 +556,6 @@ nav > div {
   color: var(--primary-02);
   text-decoration: none;
   text-transform: none;
-
 }
 
 .figure-thumbnail {
@@ -591,8 +593,70 @@ nav > div {
 }
 
 /* POST */
+.post-layout {
+  width: 100%;
+  height: 94vh;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem 0 0 0;
+  overflow: scroll; 
+}
 
+.post-content {
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+  padding: var(--size-xxxl);
+}
 
+.go-back-button {
+  display: flex;
+  background-color: var(--primary-01);
+  border: none;
+  text-align: center;
+  margin-bottom: var(--size-l);
+  cursor: pointer;
+}
+
+.go-back-button a {
+  font-size: var(--size-m);
+  color: var(--primary-02);
+  font-size: var(--size-m);
+  text-decoration: none;
+}
+
+.go-back-button a:hover {
+  text-decoration: underline;
+}
+
+.post-content h3 {
+  font-family: var(--ff-neuemontreal);
+  font-size: var(--size-xl);
+  font-style: normal;
+  font-weight: 450;
+  margin: 0 0 var(--size-s) 0;
+  color: var(--primary-02);
+  text-decoration: none;
+  text-transform: none;
+}
+
+.notes {
+  list-style-type: none;
+  margin: var(--size-s) 0 var(--size-m) 0;
+}
+
+.post-tags {
+  font-size: 1rem;
+  overflow: hidden;
+  display: flex;
+  gap: var(--size-m);
+  margin: var(--size-m) 0 var(--size-m) 0;
+  order: 1;
+}
+
+.project-images {
+  margin-top: var(--size-xxxl);
+}
 
 
 /* FOOTER */

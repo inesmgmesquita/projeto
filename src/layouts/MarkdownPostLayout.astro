@@ -2,25 +2,26 @@
 import BaseLayout from './BaseLayout.astro';
 const { frontmatter } = Astro.props;
 ---
-<BaseLayout pageTitle={frontmatter.title}>
+<BaseLayout>
   <main>
-    
-    <h2>{frontmatter.title}</h2>
-    <h3>{frontmatter.subtitle}</h3>
-    <div class="project-tags">
-        <p>{frontmatter.tag1}</p>
-        <p>{frontmatter.tag2}</p>
-        <p>{frontmatter.tag3}</p>
-    </div>
-    <ol class="notes">
-      <li>{frontmatter.mainroles}</li>
-      <li>{frontmatter.teammates}</li>
-      <li>{frontmatter.timeframe}</li>
-    </ol>
-    <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
-    <section>
-      <img src={frontmatter.image.url} alt={frontmatter.image.alt} />
-    </section>
-    <slot />
-  </main>
+    <section class="post-layout">
+      <div class="post-content">
+        <button class="go-back-button"><a href="/blog/">← Click Me</a></button>
+        <h2>{frontmatter.title}</h2>
+        <h3>{frontmatter.subtitle}</h3>
+        <ul class="notes">
+          <li>{frontmatter.mainroles}</li>
+          <li>{frontmatter.teammates}</li>
+          <li>{frontmatter.timeframe}</li>
+        </ul>
+        <p>{frontmatter.description}</p>
+        <div class="post-tags">
+          <span class="card-tags">{frontmatter.tag1}</span>
+          <span class="card-tags">{frontmatter.tag2}</span>
+          <span class="card-tags">{frontmatter.tag3}</span>
+        </div>
+        <slot />
+      </div>
+    </main>
+  </section>
 </BaseLayout >

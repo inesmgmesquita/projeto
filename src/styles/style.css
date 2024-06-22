@@ -236,7 +236,7 @@ a {
   transform: translate(-50%, -50%);
   display: flex;
   width: 400px;
-  color: #cdc6be;
+  color: var(--primary-01);
   z-index: 105;
 }
 

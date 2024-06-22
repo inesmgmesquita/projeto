@@ -649,6 +649,7 @@ nav > div {
 .info-cards {
   display: flex;
   flex-direction: column;
+  margin-top: var(--size-m);
 }
 
 .post-tags {

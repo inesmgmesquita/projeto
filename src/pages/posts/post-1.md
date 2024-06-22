@@ -2,14 +2,18 @@
 layout: ../../layouts/MarkdownPostLayout.astro
 title: Fine Arts Faculty Website
 subtitle: Rethinking the platform for applicants
-mainroles: Main Roles - Research, Wireframes, Prototype
-teammates: Team Mates - Margarida Barros, Daniela Moreno
-timeframe: Time Frame - 7 weeks
-tag1: ui design
-tag2: ux research
-tag3: prototyping
 description: This project is focused on the Faculdade de Belas Artes da Universidade de Lisboa’s (FBAUL) website. It aims to develop concrete and realistic proposals to improve the experience of candidates. Our goal is to enhance the usability of FBAUL's website for potential candidates by providing them with access to all the relevant information required to make an informed decision.
 ---
+
+<div class="info-cards">
+    <div class="post-tags">
+        <span class="card-tags">ui design</span>
+        <span class="card-tags">ux research</span>
+        <span class="card-tags">prototyping</span>
+    </div>
+    <button class="behance-button"><a href="https://www.behance.net/gallery/190788149/Website-Redesign-Belas-Artes-Lisboa" target="_blank">Open on Behance ↗</a></button>
+</div>
+
 <section class="project-grid"> 
     <figure class="project_figures">
         <img src="/assets/img/project-01/slide-1.png" alt="Image explaining the project challenge">

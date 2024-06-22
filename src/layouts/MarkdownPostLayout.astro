@@ -12,19 +12,6 @@ const { frontmatter } = Astro.props;
         <div class="post-description">
           <p>{frontmatter.description}</p>
         </div>
-        <ul class="notes">
-          <li>{frontmatter.mainroles}</li>
-          <li>{frontmatter.teammates}</li>
-          <li>{frontmatter.timeframe}</li>
-        </ul>
-        <div class="info-cards">
-          <div class="post-tags">
-            <span class="card-tags">{frontmatter.tag1}</span>
-            <span class="card-tags">{frontmatter.tag2}</span>
-            <span class="card-tags">{frontmatter.tag3}</span>
-          </div>
-          <button class="behance-button"><a href="/blog/">Open on Behance ↗</a></button>
-        </div>
         <slot />
       </div>
     </main>

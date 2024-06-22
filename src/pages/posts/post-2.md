@@ -11,7 +11,7 @@ description: There is a vast number of different job roles in the Digital Design
         <span class="card-tags">ux research</span>
         <span class="card-tags">design system</span>
     </div>
-    <button class="behance-button"><a href="https://www.behance.net/gallery/190782199/Digipath-Navigate-Your-Digital-Design-Career" target="_blank">Open on Behance ↗</a></button>
+    <button aria-label="Open menu button" class="behance-button"><a href="https://www.behance.net/gallery/190782199/Digipath-Navigate-Your-Digital-Design-Career" target="_blank">Open on Behance ↗</a></button>
 </div>
 
 <section class="project-grid"> 
